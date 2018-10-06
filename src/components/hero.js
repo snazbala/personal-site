@@ -4,9 +4,14 @@ import './hero.css';
 
 const Hero = () => (
     <div>
-        <img src={image} className="hero-image" />
-        <div className="hero-text">
-            <h2>Sahar Bala</h2>
+        <div className="hero-text-container">
+            <div className="hero-title">
+                <h2>Sahar Bala</h2>
+            </div>
+            <div className="hero-subtitle">
+                <h3 className="top-item">software engineer, artist,</h3>
+                <h3>athlete, lifelong learner</h3>
+            </div>
         </div>
     </div>
 );

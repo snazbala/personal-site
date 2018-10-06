@@ -10,8 +10,13 @@ const Menu = () => (
       </Link>
     </div>
     <div>
-      <Link to="/experience/" className="menu-link">
-        experience
+      <Link to="/story/" className="menu-link">
+        story
+      </Link>
+    </div>
+    <div>
+      <Link to="/resume/" className="menu-link">
+        resume
       </Link>
     </div>
     <div>
