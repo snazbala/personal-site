@@ -1,0 +1,16 @@
+.footer-container {
+    font-size: 0.75em;
+    border-top: 1px solid grey;
+    margin-bottom: 1.45rem;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: none;
+}
+
+.social-links-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
