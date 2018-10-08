@@ -1,15 +1,9 @@
-/*.hero-image {
-    width: 100%;
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
-}
-*/
 .hero-text-container {
     background-image: url('../images/hero-image.jpg');
     background-color: #002627;
     background-size: cover;
     display: flex;
-    height: 500px;
+    height: 550px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -19,7 +13,7 @@
 .hero-title h2 {
     color: white;
     font-family: Raleway, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 4.3em;
 }
