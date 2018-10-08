@@ -6,6 +6,7 @@ import Story from '../components/story';
 
 const StoryPage = () => (
     <Layout>
+        <h2>my story</h2>
         <Story />
     </Layout>
 );

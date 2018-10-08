@@ -5,9 +5,8 @@ import Layout from '../components/layout';
 
 const ContactPage = () => (
     <Layout>
-        <h2>This is the contact page</h2>
+        <h2>contact me</h2>
         <p>Will have an email form</p>
-        <Link to="/">Go back to the homepage</Link>
     </Layout>
 );
 

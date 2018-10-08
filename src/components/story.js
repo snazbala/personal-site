@@ -4,7 +4,6 @@ import './story.css';
 
 const Story = () => (
     <div>
-        <h2 className="page-title">My Story</h2>
         <div className="summary">
             <h3>My career journey has been completely non-linear.</h3>
             <h3>I started as a Staff Assistant at a non-profit in DC,</h3>
@@ -18,7 +17,7 @@ const Story = () => (
             <h3>and now, I'm a Software Engineer at Eventbrite.</h3>
         </div>
         <div>
-            <p>
+            <p className="first-paragraph">
                 I have a degree in International Studies. When graduating
                 college, I imagined myself soon working in the field and saving
                 the world day to day. I packed up, left the city I’d loved for
@@ -99,7 +98,7 @@ const Story = () => (
                 in React and Redux, and continuing to build on my previous
                 knowledge in Python (learned on the job through my QA role).
             </p>
-            <p>
+            <p className="last-paragraph">
                 It’s been thrilling so far, and I’m incredibly grateful every
                 day that I’ve been given these incredible opportunities, and for
                 the people who have mentored and inspired me along the way.

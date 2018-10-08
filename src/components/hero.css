@@ -5,7 +5,7 @@
 }
 */
 .hero-text-container {
-    background-image: url('hero-image.jpg');
+    background-image: url('../images/hero-image.jpg');
     background-color: #002627;
     background-size: cover;
     display: flex;
@@ -19,7 +19,7 @@
 .hero-title h2 {
     color: white;
     font-family: Raleway, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     text-transform: uppercase;
     font-size: 4.3em;
 }
@@ -33,4 +33,8 @@
 
 .top-item {
     margin-top: -55px;
+}
+
+.bottom-item {
+    margin-top: -10px;
 }

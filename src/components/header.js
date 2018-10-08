@@ -20,16 +20,6 @@ const Menu = () => (
       </Link>
     </div>
     <div>
-      <Link to="/blog/" className="menu-link">
-        blog
-      </Link>
-    </div>
-    <div>
-      <Link to="/art/" className="menu-link">
-        art
-      </Link>
-    </div>
-    <div>
       <Link to="/contact/" className="menu-link">
         contact
       </Link>
