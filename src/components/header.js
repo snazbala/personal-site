@@ -1,41 +1,108 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { Link } from 'gatsby';
+import MenuIcon from '../images/menuIcon.png';
+import CloseIcon from '../images/closeIcon.png';
 import './header.css';
 
-const Menu = () => (
-  <div className="menu-container">
-    <div>
-      <Link to="//" className="menu-link">
-        home
-      </Link>
-    </div>
-    <div>
-      <Link to="/story/" className="menu-link">
-        story
-      </Link>
-    </div>
-    <div>
-      <Link to="/resume/" className="menu-link">
-        resume
-      </Link>
-    </div>
-    <div>
-      <Link to="/contact/" className="menu-link">
-        contact
-      </Link>
-    </div>
+const links = [
+  {
+    display: 'home',
+    url: '//',
+  },
+  {
+    display: 'story',
+    url: '/story/',
+  },
+  {
+    display: 'resume',
+    url: '/resume/',
+  },
+  {
+    display: 'projects',
+    url: '/projects/',
+  },
+  {
+    display: 'blog',
+    url: 'https://www.saharbala.com/saharlearnseverything/',
+  },
+  {
+    display: 'contact',
+    url: '/contact/',
+  },
+];
+
+const Links = ({ containerClass }) => (
+  <div className={containerClass || 'menu-container'}>
+    {links.map(({ display, url }, index) => {
+      if (display === 'blog') {
+        return (
+          <div key={index}>
+            <a href={url} className="menu-link">
+              {display}
+            </a>
+          </div>
+        );
+      }
+      return (
+        <div key={index}>
+          <Link to={url} className="menu-link">
+            {display}
+          </Link>
+        </div>
+      );
+    })}
   </div>
 );
 
-const Header = () => (
-  <div className="header-container">
-    <h1>
-      <Link to="/" className="title-link">
-        Sahar Bala
-      </Link>
-    </h1>
-    <Menu />
-  </div>
-);
+export default class Header extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMenuOpen: false,
+    };
+  }
 
-export default Header;
+  render() {
+    const isOpen = this.state.isMenuOpen;
+    const toggleMenu = () => {
+      if (isOpen) {
+        this.setState({ isMenuOpen: false });
+      } else {
+        this.setState({ isMenuOpen: true });
+      }
+    };
+
+    let mobileLinks;
+
+    let headerIcon = <img src={MenuIcon} onClick={() => toggleMenu()} />;
+
+    if (isOpen) {
+      mobileLinks = <Links containerClassName="header__links--mobile" />;
+      headerIcon = <img src={CloseIcon} onClick={() => toggleMenu()} />;
+    }
+
+    return (
+      <div>
+        <div className="header__desktop">
+          <h1>
+            <Link to="/" className="title-link">
+              Sahar Bala
+            </Link>
+          </h1>
+          <Links />
+        </div>
+        <div className="header__mobile">
+          <div>
+            <h1>
+              <Link to="/" className="title-link">
+                Sahar Bala
+              </Link>
+            </h1>
+            {headerIcon}
+          </div>
+          {mobileLinks}
+        </div>
+      </div>
+    );
+  }
+}

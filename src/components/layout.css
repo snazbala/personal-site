@@ -11,6 +11,8 @@ html {
 
 .wrapper--max-width {
     max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p {

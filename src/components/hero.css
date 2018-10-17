@@ -1,6 +1,6 @@
 .hero-text-container {
-    background-image: url('../images/hero-image.jpg');
     background-color: #002627;
+    background-image: url('../images/hero-image.jpg');
     background-size: cover;
     display: flex;
     height: 550px;
