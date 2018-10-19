@@ -31,13 +31,13 @@ const links = [
   },
 ];
 
-const Links = ({ containerClassName, mobileMenuLinks }) => (
+const Links = ({ containerClassName }) => (
   <div className={containerClassName || 'menu-container'}>
     {links.map(({ display, url }, index) => {
       if (display === 'blog') {
         return (
           <div key={index}>
-            <a href={url} className={mobileMenuLinks || 'menu-link'}>
+            <a href={url} className="menu-link">
               {display}
             </a>
           </div>
@@ -45,7 +45,7 @@ const Links = ({ containerClassName, mobileMenuLinks }) => (
       }
       return (
         <div key={index}>
-          <Link to={url} className={mobileMenuLinks || 'menu-link'}>
+          <Link to={url} className="menu-link">
             {display}
           </Link>
         </div>
@@ -77,12 +77,7 @@ export default class Header extends PureComponent {
     let headerIcon = <img src={MenuIcon} onClick={() => toggleMenu()} />;
 
     if (isOpen) {
-      mobileLinks = (
-        <Links
-          containerClassName="header__links--mobile"
-          mobileMenuLinks="menu-link__mobile"
-        />
-      );
+      mobileLinks = <Links containerClassName="header__links--mobile" />;
       headerIcon = <img src={CloseIcon} onClick={() => toggleMenu()} />;
     }
 

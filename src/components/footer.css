@@ -11,7 +11,7 @@
 }
 
 .social-links-container {
-    width: 15%;
+    width: 160px;
     display: flex;
     justify-content: space-between;
 }
