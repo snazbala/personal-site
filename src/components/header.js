@@ -31,13 +31,13 @@ const links = [
   },
 ];
 
-const Links = ({ containerClass }) => (
-  <div className={containerClass || 'menu-container'}>
+const Links = ({ containerClassName, mobileMenuLinks }) => (
+  <div className={containerClassName || 'menu-container'}>
     {links.map(({ display, url }, index) => {
       if (display === 'blog') {
         return (
           <div key={index}>
-            <a href={url} className="menu-link">
+            <a href={url} className={mobileMenuLinks || 'menu-link'}>
               {display}
             </a>
           </div>
@@ -45,7 +45,7 @@ const Links = ({ containerClass }) => (
       }
       return (
         <div key={index}>
-          <Link to={url} className="menu-link">
+          <Link to={url} className={mobileMenuLinks || 'menu-link'}>
             {display}
           </Link>
         </div>
@@ -77,7 +77,12 @@ export default class Header extends PureComponent {
     let headerIcon = <img src={MenuIcon} onClick={() => toggleMenu()} />;
 
     if (isOpen) {
-      mobileLinks = <Links containerClassName="header__links--mobile" />;
+      mobileLinks = (
+        <Links
+          containerClassName="header__links--mobile"
+          mobileMenuLinks="menu-link__mobile"
+        />
+      );
       headerIcon = <img src={CloseIcon} onClick={() => toggleMenu()} />;
     }
 
@@ -98,10 +103,10 @@ export default class Header extends PureComponent {
                 Sahar Bala
               </Link>
             </h1>
-            {headerIcon}
           </div>
-          {mobileLinks}
+          <div>{headerIcon}</div>
         </div>
+        {mobileLinks}
       </div>
     );
   }
