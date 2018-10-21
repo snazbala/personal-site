@@ -26,8 +26,12 @@ const Layout = ({ children, isFullWidth }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              {
+                name: 'description',
+                content:
+                  'Sahar Bala is a San Francisco based software engineer currently working at Eventbrite.',
+              },
+              { name: 'keywords', content: 'sahar bala, software engineer' },
             ]}
           >
             <html lang="en" />
