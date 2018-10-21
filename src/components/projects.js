@@ -7,7 +7,7 @@ const Projects = () => (
             <a href="https://github.com/snazbala/personal-site">
                 Personal Site
             </a>{' '}
-            (this one!)
+            <div className="personal-site">- this one!</div>
         </h3>
         <h3>
             <a href="https://github.com/eventbrite/britecharts">
@@ -16,7 +16,7 @@ const Projects = () => (
         </h3>
         <h3>
             <a href="http://sahar-currency-converter.herokuapp.com/">
-                Tiny little currency converter with real time data
+                Tiny little currency converter with real time data (wip)
             </a>
         </h3>
     </div>

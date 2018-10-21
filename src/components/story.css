@@ -1,5 +1,4 @@
 .summary h3 {
-    font-family: Raleway, sans-serif;
     font-weight: 200;
     font-size: 1.3em;
     margin-bottom: -10px;
@@ -11,4 +10,8 @@
 
 .last-paragraph {
     padding-bottom: 50px;
+}
+
+.story {
+    line-height: 1.6;
 }
