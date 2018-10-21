@@ -30,7 +30,12 @@ const shareIconData = [
 
 const Share = () =>
     shareIconData.map(site => (
-        <IconButton image={site.image} link={site.link} key={site.name} />
+        <IconButton
+            image={site.image}
+            link={site.link}
+            key={site.name}
+            alt={site.name}
+        />
     ));
 
 export default Share;

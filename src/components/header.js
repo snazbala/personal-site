@@ -74,11 +74,19 @@ export default class Header extends PureComponent {
 
     let mobileLinks;
 
-    let headerIcon = <img src={MenuIcon} onClick={() => toggleMenu()} />;
+    let headerIcon = (
+      <img src={MenuIcon} onClick={() => toggleMenu()} alt="Menu Icon" />
+    );
 
     if (isOpen) {
       mobileLinks = <Links containerClassName="header__links--mobile" />;
-      headerIcon = <img src={CloseIcon} onClick={() => toggleMenu()} />;
+      headerIcon = (
+        <img
+          src={CloseIcon}
+          onClick={() => toggleMenu()}
+          alt="Close Menu Icon"
+        />
+      );
     }
 
     return (

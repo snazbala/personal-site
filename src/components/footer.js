@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import './footer.css';
 import Share from './share';
 
