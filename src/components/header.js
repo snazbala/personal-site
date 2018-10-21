@@ -23,7 +23,7 @@ const links = [
   },
   {
     display: 'blog',
-    url: 'https://www.saharbala.com/saharlearnseverything/',
+    url: 'https://saharbala.wixsite.com/sahar/saharlearnseverything',
   },
   {
     display: 'contact',
