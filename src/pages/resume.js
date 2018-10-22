@@ -8,7 +8,7 @@ const ResumePage = () => (
         <div>
             <h2>resume</h2>
             <a
-                href="https://drive.google.com/file/d/1_u3jgQPMMLBNG8Z1wean4YyTOBo2PINF/view?usp=sharing"
+                href="https://drive.google.com/file/d/1LdszIwOS9gwqFpQbCFjFLzQBm6yvebCg/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
             >
