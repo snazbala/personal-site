@@ -4,7 +4,7 @@ import './contact.css';
 const Contact = () => (
     <div className="contact-container">
         <h3>Let's chat!</h3>
-        <p>For general inquiries: hello at saharbala.com.</p>
+        <p>For general inquiries: hellosaharb at gmail.com.</p>
         <p>
             For recruiters:{' '}
             <a href="https://www.linkedin.com/in/saharbala/">LinkedIn</a>.
