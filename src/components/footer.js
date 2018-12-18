@@ -7,7 +7,7 @@ const currentYear = dateObj.getFullYear();
 
 const Footer = () => (
     <div className="footer-container">
-        <p>© {currentYear} SAHAR BALA</p>
+        <p>built by Sahar Bala © {currentYear}</p>
         <div className="social-links-container">
             <Share />
         </div>
