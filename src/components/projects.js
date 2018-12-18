@@ -16,8 +16,9 @@ const Projects = () => (
         </h3>
         <h3>
             <a href="http://sahar-currency-converter.herokuapp.com/">
-                Tiny little currency converter with real time data (wip)
+                Tiny little currency converter with real time data
             </a>
+            <span> (wip - note: 30 second delay to load from Heroku)</span>
         </h3>
     </div>
 );
