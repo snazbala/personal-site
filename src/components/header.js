@@ -22,8 +22,8 @@ const links = [
     url: '/projects/',
   },
   {
-    display: 'blog',
-    url: 'https://saharbala.wixsite.com/sahar/saharlearnseverything',
+    display: 'publications',
+    url: '/publications/',
   },
   {
     display: 'contact',
