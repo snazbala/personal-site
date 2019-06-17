@@ -2,26 +2,39 @@ import React from 'react';
 import './projects.css';
 
 const Projects = () => (
-    <div className="projects-container">
-        <h3>
-            <a href="https://github.com/snazbala/personal-site">
-                Personal Site
-            </a>{' '}
-            <div className="personal-site">- this one!</div>
-        </h3>
-        <h3>
-            <a href="https://github.com/eventbrite/britecharts">
-                Open source contributor to Britecharts
-            </a>
-        </h3>
-        <h3>
-            <a href="http://sahar-currency-converter.herokuapp.com/">
-                Tiny currency converter with real time data using React and
-                Redux
-            </a>
-            <span> (wip - note: 30 second delay to load from Heroku)</span>
-        </h3>
-    </div>
+  <div className="projects-container">
+    <h3>
+      <a href="https://github.com/snazbala/personal-site">Personal site</a>{' '}
+      <ul>
+        <li>this one!</li>
+      </ul>
+    </h3>
+    <h3>
+      <a href="https://github.com/eventbrite/britecharts">Britecharts</a>
+      <ul>
+        <li> Open source contributor</li>
+      </ul>
+    </h3>
+    <h3>
+      <a href="https://lease-estimate.netlify.com/">
+        Full stack lease estimate app
+      </a>
+      <ul>
+        <li>Returns a monthly rent estimate for qualified home owners.</li>
+        <li>Provides an Admin view to see submissions and estimates.</li>
+        <li>
+          <a href="https://github.com/snazbala/rental-estimate">
+            Source (frontend)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/snazbala/rental-estimate-api">
+            Source (backend)
+          </a>
+        </li>
+      </ul>
+    </h3>
+  </div>
 );
 
 export default Projects;
