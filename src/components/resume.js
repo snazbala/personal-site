@@ -51,9 +51,12 @@ const Education = () => (
 
 const Experience = () => (
     <div>
+        <h4>convoy</h4>
+
+        <h5>Software Engineer | sep 2019 – present</h5>
         <h4>eventbrite</h4>
 
-        <h5>Software Engineer II | jan 2019 – present</h5>
+        <h5>Software Engineer II | jan 2019 – aug 2019</h5>
         <h5>Software Engineer | october 2017 – jan 2019</h5>
         <ul>
             <li>
