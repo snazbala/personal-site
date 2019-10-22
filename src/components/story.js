@@ -89,11 +89,16 @@ const Story = () => (
                 the chance to be a software engineer.
             </p>
             <p>
-                So that brings us to now. I’m currently a software engineer on
-                the Expand Checkout squad at Eventbrite, specializing in our
+                I jumped into a full time software engineer role on
+                the Expand Checkout squad at Eventbrite, specializing in the
                 frontend in React and Redux, and continuing to build on my
                 previous knowledge in Python (learned on the job through my QA
                 role).
+            </p>
+            <p>
+                Most recently, I moved to Seattle, WA, where I'm now a software engineer
+                at Convoy, a digital freight marketplace whose mission is to transport the
+                world’s goods with endless capacity and zero waste.
             </p>
             <p className="last-paragraph">
                 It’s been thrilling so far, and I’m incredibly grateful every

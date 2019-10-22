@@ -29,7 +29,7 @@ const Layout = ({ children, isFullWidth }) => {
               {
                 name: 'description',
                 content:
-                  'Sahar Bala is a San Francisco based Software Engineer currently working at Eventbrite.',
+                  'Sahar Bala is a Seattle based Software Engineer currently working at Convoy.',
               },
               { name: 'keywords', content: 'sahar bala, software engineer' },
             ]}
