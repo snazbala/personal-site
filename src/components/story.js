@@ -6,15 +6,6 @@ const Story = () => (
     <div>
         <div className="summary">
             <h3>My career journey has been completely non-linear.</h3>
-            <h3>I started as a Staff Assistant at a non-profit in DC,</h3>
-            <h3>
-                then, an entry-level Customer Support Representative at
-                Eventbrite.
-            </h3>
-            <h3>Several roles in between,</h3>
-            <h3>a lot of time spent learning and improving,</h3>
-            <h3>dabbling in management,</h3>
-            <h3>and now, I'm a Software Engineer at Eventbrite.</h3>
         </div>
         <div className="story">
             <p className="first-paragraph">
@@ -96,9 +87,12 @@ const Story = () => (
                 role).
             </p>
             <p>
-                Most recently, I moved to Seattle, WA, where I'm now a software engineer
+                Most recently, I moved to Seattle, WA, where I'm a software engineer
                 at Convoy, a digital freight marketplace whose mission is to transport the
-                world’s goods with endless capacity and zero waste.
+                world’s goods with endless capacity and zero waste. My team works on building
+                new tools and automating workflows for our Operations teams who ensure that
+                our freight gets to where it needs to be in the most efficient and effective way,
+                while delivering high quality service.
             </p>
             <p className="last-paragraph">
                 It’s been thrilling so far, and I’m incredibly grateful every

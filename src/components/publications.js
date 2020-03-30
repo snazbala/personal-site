@@ -21,14 +21,6 @@ const Publications = () => (
         </a>
       </li>
     </ul>
-    <h3>Personal Blog</h3>
-    <ul>
-      <li>
-        <a href="https://saharbala.wixsite.com/sahar/saharlearnseverything">
-          Sahar Learns Everything
-        </a>
-      </li>
-    </ul>
   </div>
 );
 
