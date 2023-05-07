@@ -1,8 +1,7 @@
 import React from 'react';
-import './projects.css';
 
 const Projects = () => (
-  <div className="projects-container">
+  <div style={{ paddingBottom: '40px' }}>
     <h3>
       <a href="https://github.com/snazbala/personal-site">Personal site</a>{' '}
       <ul>
